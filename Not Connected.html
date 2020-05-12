@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' ms-appx-web:">
+    <title>You’re not connected</title>
+    <link href="ErrorPageStyles.css" rel="stylesheet" type="text/css">
+    <script language="javascript" src="ms-appx-web:///Assets/ErrorPages/ErrorPageScripts.js" type="text/javascript"></script>
+    <script language="javascript" src="ms-appx-web:///Assets/ErrorPages/dnserror.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <div id="Wrapper">
+        <div id="PageUnavailable" style="display: none;">
+            <div class="msgBlock">
+                <div class="msgBody">
+                    <table role="presentation">
+                        <tbody><tr>
+                            <td aria-hidden="true">
+                                <span id="icon"></span>
+                            </td>
+                            <td>
+                                <h1 id="dnserror_unavailable_header">Hmmm...can’t reach this page</h1>
+                                <p id="dnserror_unavailable_body">Try this</p>
+                                <ul>
+                                    <li id="PageUnavailableApplicationGuardWorkRelatedSuggestion">If this is a work-related site, open it in a new Microsoft Edge window outside of Application Guard</li>
+                                    <li><id id="dnserror_unavailable_righturl">Make sure you’ve got the right web address: </id> <span class="webpageURL">https://www.msn.com</span></li>
+                                    <li><a id="dnsErrorSearchLink" href="#"><id id="dnserror_unavailable_search">Search for "<span class="webpageURL">https://www.msn.com</span>" on Bing</id></a></li>
+                                    <li><a id="dnsErrorRefreshLink" href="#"><id id="dnserror_unavailable_refresh">Refresh the page</id></a></li>
+                                </ul>
+                                <div id="moreInfoDropdown">
+                                    <a id="moreInformationDropdownLink" aria-expanded="false" aria-controls="infoBlockID" style="text-decoration: none;" aria-label="Details" href="#">
+                                        <span id="moreInformationDropdownSpan">Details</span>
+                                    </a>
+                                </div>
+                                <div id="infoBlockID" aria-hidden="true" style="display: none;">
+                                    <p id="subError">The DNS name does not exist.</p>
+                                    <p id="ErrorCode">Error Code: INET_E_RESOURCE_NOT_FOUND</p>
+                                </div>
+                                <ul>
+                                    <li><a id="dnsSendFeedbackLink" href="#"><id id="dnserror_unavailable_sendfeedback">Report this issue</id></a></li>
+                                </ul>
+                                <br>
+                                <a id="dnsPrivacyStatementLink" href="#"><id id="dnserror_unavailable_privacystatement"><small>Privacy statement</small></id></a>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="NotConnected">
+            <table role="presentation">
+                <tbody><tr>
+                    <td aria-hidden="true">
+                        <span id="icon"></span>
+                    </td>
+                    <td>
+                        <h1 id="dnserror_offline_header">You’re not connected</h1>
+                        <p id="dnserror_offline_body1">And the web just isn’t the same without you. </p>
+                        <p id="dnserror_offline_body2">Let’s get you back online</p>
+                        <ul>
+                            <li class="noCables"><id id="dnserror_offline_checkcables">Check that your network cables are plugged in.</id></li>
+                            <li><id id="dnserror_offline_airplanemode">Make sure you’re not in airplane mode.</id></li>
+                            <li><id id="dnserror_offline_wirelessswitch">See if your wireless switch is turned on.</id></li>
+                            <li><id id="dnserror_offline_restartrouter">Restart your router.</id></li>
+                        </ul>
+                        <br>
+                        <button class="pushbutton" id="LaunchMSSettingsNetworkStatus" type="submit"><id id="dnserror_offline_networksettings">Help me fix it</id></button>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+
+        <div class="locResources">
+            <p id="L_Unavailable_Title_TEXT">Can’t reach this page</p>
+            <p id="L_Disconnected_Title_TEXT">You’re not connected</p>
+            <p id="L_RESOURCE_NOT_FOUND_TEXT">This website could not be found.</p>
+            <p id="L_RESOURCE_NOT_FOUND_WSAECONNRESET_TEXT">The DNS server refused the connection.</p>
+            <p id="L_RESOURCE_NOT_FOUND_WSAETIMEDOUT_TEXT">The connection to the DNS server timed out.</p>
+            <p id="L_RESOURCE_NOT_FOUND_ERROR_SUCCESS_TEXT">There was a temporary DNS error. Try refreshing the page.</p>
+            <p id="L_RESOURCE_NOT_FOUND_WSAHOST_NOT_FOUND_TEXT">The DNS name does not exist.</p>
+            <p id="L_RESOURCE_NOT_FOUND_ERROR_OTHER_TEXT">The DNS server might be having problems.</p>
+            <p id="L_DOWNLOAD_FAILURE_TEXT">The connection to the website was reset.</p>
+            <p id="L_REDIRECT_FAILED_TEXT">There were too many redirections.</p>
+            <p id="L_CONNECTION_TIMEOUT_TEXT">It took too long to connect to this website.</p>
+            <p id="L_DATA_NOT_AVAILABLE_TEXT">We connected to the website, but didn’t receive any data from it.</p>
+            <p id="L_ERROR_CODE_TEXT">Error Code: </p>
+            <p id="L_MOREINFO_TEXT">Details</p>
+        </div>
+    </div>
+
+ 
+</body></html>
